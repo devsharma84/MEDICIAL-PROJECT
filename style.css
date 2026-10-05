@@ -1,0 +1,1895 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+}
+/* MAIN SECTION */
+.health-section {
+  width: 100%;
+  height: 100vh;
+  background: #0d0b29;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 8%;
+  gap: 70px;
+}
+/* LEFT SIDE */
+.health-left {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.health-left h1 {
+  font-size: 38px;
+  line-height: 0.95;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.arrow {
+  font-size: 55px;
+  font-weight: 200;
+  line-height: 1;
+  margin-left: 5px;
+  margin-bottom: 70px;
+}
+.next-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(90deg, #1169a0, #2081b5);
+  padding: 12px 27px;
+  font-size: 11px;
+  font-style: italic;
+  transition: 0.3s ease;
+}
+.next-btn:hover {
+  opacity: 0.8;
+}
+/* RIGHT SIDE */
+.health-right {
+  width: 55%;
+}
+.health-right p {
+  color: #e0e0e5;
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.health-right p:last-child {
+  margin-bottom: 0;
+}
+/* Main Hero Section */
+.medical-hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    105deg,
+    #111833 0%,
+    #162452 28%,
+    #12609b 65%,
+    #35a8dc 100%
+  );
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+/* Optional soft gradient effect */
+.medical-hero::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: -180px;
+  bottom: -220px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  filter: blur(20px);
+}
+/* Top Navigation */
+.top-bar {
+  width: 100%;
+  padding: 32px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo-icon {
+  width: 18px;
+  height: 25px;
+  background: repeating-linear-gradient(
+    135deg,
+    white 0px,
+    white 3px,
+    transparent 3px,
+    transparent 6px
+  );
+  transform: skewY(-25deg);
+}
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+.logo-text strong {
+  font-size: 8px;
+  font-weight: 600;
+}
+.logo-text span {
+  font-size: 6px;
+  opacity: 0.85;
+}
+/* Navigation */
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+}
+.navigation span {
+  font-size: 8px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0.9;
+}
+/* Hero Content */
+.hero-content {
+  position: absolute;
+  left: 44px;
+  bottom: 55px;
+  z-index: 2;
+}
+.hero-content h1 {
+  font-size: 60px;
+  line-height: 0.9;
+  font-weight: 300;
+  letter-spacing: -3px;
+}
+.hero-content p {
+  margin-top: 15px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+}
+/* Arrow */
+.errow {
+  position: absolute;
+  right: 38px;
+  bottom: 43px;
+  z-index: 3;
+  width: 55px;
+  height: 30px;
+}
+
+.errow::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 50px;
+  height: 1.5px;
+  background: white;
+}
+.errow::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 1px;
+  width: 14px;
+  height: 14px;
+  border-top: 1.5px solid white;
+  border-right: 1.5px solid white;
+  transform: rotate(45deg);
+}
+
+/* MAIN SECTION */
+.professional-section {
+  width: 100%;
+  height: 100vh;
+  padding: 55px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #fff;
+}
+
+.professional-container {
+  width: 100%;
+  max-width: 1150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* LEFT CONTENT */
+.professional-content {
+  width: 42%;
+  flex-shrink: 0;
+}
+
+.professional-content h1 {
+  font-size: 38px;
+  line-height: 0.95;
+  font-weight: 400;
+  color: #080808;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+/* ARROW */
+.arrow {
+  display: inline-block;
+  font-size: 45px;
+  font-weight: 300;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.professional-content p {
+  max-width: 390px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #222;
+}
+
+/* RIGHT IMAGE COLLAGE */
+.image-collage {
+  width: 55%;
+  height: 310px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-card {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* LEFT BLUE CARD */
+.card-one {
+  width: 115px;
+  height: 250px;
+  left: 0;
+  top: 35px;
+  border: 5px solid #174d75;
+}
+
+.card-one .card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 6px;
+  background: #17628d;
+  color: white;
+  font-size: 15px;
+  line-height: 1.05;
+}
+
+/* TOP ACCURACY CARD */
+.accuracy-card {
+  position: absolute;
+  top: 0;
+  left: 125px;
+  width: 112px;
+  height: 72px;
+  background: #15517c;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.accuracy-card strong {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.accuracy-card span {
+  font-size: 11px;
+}
+
+/* CENTER IMAGE */
+.card-two {
+  width: 110px;
+  height: 230px;
+  left: 120px;
+  top: 75px;
+}
+
+/* TOP RIGHT IMAGE */
+.card-three {
+  width: 100px;
+  height: 105px;
+  left: 235px;
+  top: 65px;
+}
+
+/* BOTTOM RIGHT IMAGE */
+.card-four {
+  width: 100px;
+  height: 105px;
+  left: 235px;
+  top: 180px;
+}
+
+/* FAR RIGHT LARGE IMAGE */
+.card-five {
+  width: 125px;
+  height: 260px;
+  left: 340px;
+  top: 45px;
+}
+
+/* =========================
+   MAIN SECTION
+========================= */
+
+.patient-section {
+  width: 100%;
+  height: 100vh;
+  background: #09071f;
+  overflow: hidden;
+  padding: 45px 5%;
+}
+
+.patient-container {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 300px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.patient-content {
+  width: 48%;
+  color: white;
+}
+
+.patient-content h1 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 0.95;
+  margin-bottom: 22px;
+}
+
+.down-arrow {
+  display: block;
+  font-size: 48px;
+  font-weight: 200;
+  margin: 10px 0 15px 0;
+}
+
+.patient-content p {
+  max-width: 410px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: #e5e5e5;
+}
+
+/* =========================
+   RIGHT COLLAGE
+========================= */
+
+.patient-collage {
+  width: 48%;
+  height: 315px;
+  position: relative;
+}
+
+/* Common image */
+.photo {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Top image */
+.photo-one {
+  width: 148px;
+  height: 148px;
+  left: 0;
+  top: 0;
+}
+
+/* Satisfaction card */
+.satisfaction {
+  position: absolute;
+  width: 148px;
+  height: 148px;
+  left: 0;
+  top: 160px;
+
+  background: linear-gradient(135deg, #164b78, #1d8ab3);
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 3px;
+}
+
+.satisfaction strong {
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.satisfaction span {
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+/* Right top blue card */
+.blue-card {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  left: 160px;
+  top: 0;
+
+  background: linear-gradient(135deg, #164a75, #1b759d);
+
+  border-radius: 3px;
+}
+
+/* Right middle image */
+.photo-two {
+  width: 110px;
+  height: 145px;
+  left: 160px;
+  top: 120px;
+}
+
+/* Far right image */
+.photo-three {
+  width: 110px;
+  height: 145px;
+  left: 280px;
+  top: 0;
+}
+
+.photo-four {
+  width: 110px;
+  height: 145px;
+  left: 280px;
+  top: 155px;
+}
+.diagnostic-section {
+  width: 100%;
+  height: 100vh;
+  padding: 55px 40px;
+  background: #fff;
+}
+
+.diagnostic-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.diagnostic-title {
+  font-size: 40px;
+  line-height: 1.05;
+  font-weight: 500;
+  color: #050505;
+  margin-bottom: 22px;
+  max-width: 500px;
+}
+
+.diagnostic-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.diagnostic-card {
+  position: relative;
+  min-height: 205px;
+  padding: 18px 13px;
+  border-radius: 13px;
+  background: #193f68;
+  color: white;
+}
+
+.diagnostic-card:nth-child(2) {
+  background: #21486f;
+}
+
+.diagnostic-card:nth-child(3) {
+  background: #496b89;
+}
+
+.arrow-box {
+  width: 27px;
+  height: 27px;
+  background: white;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+
+.diagnostic-card p {
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Small orange corner mark */
+.corner-mark {
+  position: absolute;
+  top: -5px;
+  right: -4px;
+  width: 14px;
+  height: 14px;
+  background: #f05a24;
+  border-radius: 50%;
+}
+
+/* Main Section */
+.preventive-section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(110deg, #08071d, #171735);
+  color: white;
+
+  display: flex;
+  align-items: center;
+
+  padding: 50px 7%;
+}
+
+/* Left Content */
+.left-content {
+  width: 40%;
+  padding-right: 30px;
+}
+
+.left-content h1 {
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 0.95;
+  margin-bottom: 25px;
+}
+
+.arrow {
+  font-size: 45px;
+  font-weight: 200;
+  line-height: 1;
+  margin-bottom: 60px;
+}
+
+.next-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #1689c9, #2964b8);
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-style: italic;
+  border-radius: 1px;
+}
+
+/* Right Content */
+.right-content {
+  width: 60%;
+}
+
+.right-content p {
+  font-size: 15px;
+  line-height: 1.45;
+  letter-spacing: 0.3px;
+  margin-bottom: 28px;
+  text-align: justify;
+  max-width: 650px;
+}
+/* MAIN SECTION */
+.healing-section {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 60px 40px;
+}
+
+.healing-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* LEFT CONTENT */
+.healing-content {
+  width: 45%;
+}
+
+.healing-title {
+  font-size: 42px;
+  line-height: 0.95;
+  font-weight: 400;
+  color: #111111;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  display: inline-block;
+  font-size: 45px;
+  font-weight: 300;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.healing-text {
+  max-width: 470px;
+  font-size: 16px;
+  line-height: 1.45;
+  color: #222222;
+  letter-spacing: 0.2px;
+}
+
+/* RIGHT IMAGE AREA */
+.image-area {
+  width: 50%;
+  height: 370px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.image-card {
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* First image */
+.image-one {
+  width: 115px;
+  height: 250px;
+  border: 5px solid #135278;
+}
+
+/* Second image */
+.image-two {
+  width: 115px;
+  height: 250px;
+}
+
+/* Third image */
+.image-three {
+  width: 115px;
+  height: 250px;
+}
+
+/* BLUE TEXT BOX */
+.recovery-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 8px;
+  color: white;
+  font-size: 15px;
+  line-height: 1.05;
+  background: linear-gradient(transparent, rgba(10, 75, 110, 0.95));
+}
+
+/* 95% BOX */
+.satisfaction {
+  position: absolute;
+  top: -35px;
+  left: 120px;
+  width: 115px;
+  height: 75px;
+  background: #15537b;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 10px;
+  z-index: 5;
+}
+
+.satisfaction strong {
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.satisfaction span {
+  font-size: 12px;
+}
+
+/* MAIN SECTION */
+.support-section {
+  width: 100%;
+  height: 100vh;
+  background: #08071d;
+  padding: 60px 6%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* LEFT CONTENT */
+.contant {
+  width: 58%;
+  color: white;
+  padding-right: 40px;
+}
+
+.contant h1 {
+  font-size: 48px;
+  line-height: 0.95;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.arrow {
+  font-size: 50px;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+
+.content p {
+  max-width: 470px;
+  color: #d1d0dc;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+/* RIGHT SIDE */
+.cards {
+  width: 42%;
+  height: 430px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  overflow: hidden;
+}
+
+/* IMAGE */
+.card-image {
+  width: 100%;
+  height: 145px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BLUE CARD */
+.blue-card {
+  height: 145px;
+  background: linear-gradient(135deg, #0c3d70, #1582c4);
+  border-radius: 5px;
+}
+
+/* PERCENTAGE CARD */
+.percent-card {
+  height: 145px;
+  background: linear-gradient(135deg, #07518a, #1686c8);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.percent-card .number {
+  font-size: 52px;
+  font-weight: 300;
+}
+
+.percent-card span {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* EMPTY SPACING */
+.empty {
+  height: 145px;
+}
+
+.health-section {
+  width: 100%;
+  padding: 55px 40px 35px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Heading */
+.heading {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.02;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  min-height: 205px;
+  padding: 18px 16px;
+  border-radius: 13px;
+  background: #193e67;
+  color: white;
+}
+
+.card:nth-child(2) {
+  background: #214a75;
+}
+
+.card:nth-child(3) {
+  background: #4a6d8e;
+}
+
+/* Arrow box */
+.arrow {
+  width: 27px;
+  height: 27px;
+  background: white;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Close icon */
+.close {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #f15b35;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.35;
+  color: #e8edf2;
+  max-width: 250px;
+}
+
+/* Main Section */
+.thank-section {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+}
+
+/* Blue Slide */
+.thank-card {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 560px;
+
+  position: relative;
+  overflow: hidden;
+
+  padding: 35px 40px;
+
+  background:
+    radial-gradient(
+      circle at 80% 45%,
+      rgba(35, 181, 239, 0.85),
+      transparent 45%
+    ),
+    linear-gradient(110deg, #11132f 0%, #152c5b 35%, #087db3 100%);
+}
+
+/* Header */
+.top-bar {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: white;
+  font-size: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 9px;
+  line-height: 1.1;
+}
+
+.logo-icon {
+  width: 18px;
+  height: 24px;
+
+  background: repeating-linear-gradient(
+    135deg,
+    white 0px,
+    white 3px,
+    transparent 3px,
+    transparent 6px
+  );
+
+  clip-path: polygon(
+    0 25%,
+    35% 0,
+    100% 0,
+    65% 25%,
+    100% 25%,
+    65% 50%,
+    100% 50%,
+    65% 75%,
+    100% 75%,
+    65% 100%,
+    35% 100%,
+    0 75%,
+    35% 50%,
+    0 50%,
+    35% 25%
+  );
+}
+
+.header-info {
+  display: flex;
+  gap: 45px;
+}
+
+/* Main Text */
+.content {
+  position: absolute;
+  left: 40px;
+  bottom: 55px;
+
+  color: white;
+}
+
+.content h1 {
+  font-size: 68px;
+  font-weight: 300;
+  line-height: 0.9;
+  letter-spacing: -2px;
+}
+
+.content p {
+  margin-top: 18px;
+
+  font-size: 13px;
+  font-style: italic;
+
+  color: #e5e9ef;
+}
+
+/* Arrow */
+.row {
+  position: absolute;
+
+  right: 42px;
+  bottom: 45px;
+
+  width: 55px;
+  height: 30px;
+}
+
+.row-line {
+  position: absolute;
+
+  top: 14px;
+  left: 0;
+
+  width: 48px;
+  height: 1.5px;
+
+  background: white;
+}
+
+.row-head {
+  position: absolute;
+
+  top: 7px;
+  right: 0;
+
+  width: 15px;
+  height: 15px;
+
+  border-top: 1.5px solid white;
+  border-right: 1.5px solid white;
+
+  transform: rotate(45deg);
+}
+@media (max-width: 768px) {
+  .health-section {
+    padding: 40px 5%;
+    gap: 35px;
+  }
+  .health-left {
+    width: 38%;
+  }
+  .health-left h1 {
+    font-size: 30px;
+  }
+  .arrow {
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+  .next-btn {
+    padding: 11px 22px;
+    font-size: 10px;
+  }
+  .health-right {
+    width: 62%;
+  }
+  .health-right p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  .medical-hero {
+    min-height: 100vh;
+  }
+  .top-bar {
+    padding: 28px 35px;
+  }
+  .navigation {
+    gap: 35px;
+  }
+  .navigation span {
+    font-size: 8px;
+  }
+  .hero-content {
+    left: 35px;
+    bottom: 70px;
+  }
+  .hero-content h1 {
+    font-size: 52px;
+  }
+  .hero-content p {
+    font-size: 13px;
+  }
+  .arrow {
+    right: 30px;
+    bottom: 58px;
+  }
+  .professional-section {
+    min-height: auto;
+    padding: 50px 35px;
+  }
+
+  .professional-container {
+    gap: 25px;
+  }
+
+  .professional-content {
+    width: 45%;
+  }
+
+  .professional-content h1 {
+    font-size: 30px;
+  }
+
+  .professional-content p {
+    font-size: 14px;
+  }
+
+  .arrow {
+    font-size: 35px;
+    margin-left: 8px;
+  }
+
+  .image-collage {
+    width: 55%;
+    height: 280px;
+    transform: scale(0.88);
+    transform-origin: center;
+  }
+  .patient-section {
+    padding: 40px 30px;
+  }
+
+  .patient-container {
+    gap: 20px;
+  }
+
+  .patient-content {
+    width: 47%;
+  }
+
+  .patient-content h1 {
+    font-size: 32px;
+  }
+
+  .down-arrow {
+    font-size: 40px;
+  }
+
+  .patient-content p {
+    font-size: 14px;
+  }
+
+  .patient-collage {
+    width: 53%;
+    transform: scale(0.85);
+    transform-origin: center;
+  }
+  .diagnostic-section {
+    padding: 45px 25px;
+  }
+
+  .diagnostic-title {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+
+  .diagnostic-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .diagnostic-card {
+    min-height: 190px;
+    padding: 15px 11px;
+  }
+
+  .diagnostic-card p {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  .arrow-box {
+    margin-bottom: 18px;
+  }
+  .preventive-section {
+    padding: 40px 5%;
+  }
+
+  .left-content {
+    width: 38%;
+    padding-right: 20px;
+  }
+
+  .right-content {
+    width: 62%;
+  }
+
+  .left-content h1 {
+    font-size: 30px;
+  }
+
+  .arrow {
+    font-size: 38px;
+    margin-bottom: 45px;
+  }
+
+  .right-content p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .next-btn {
+    padding: 10px 22px;
+    font-size: 11px;
+  }
+  .healing-section {
+    padding: 50px 25px;
+    min-height: auto;
+  }
+
+  .healing-container {
+    gap: 30px;
+  }
+
+  .healing-content {
+    width: 48%;
+  }
+
+  .healing-title {
+    font-size: 32px;
+  }
+
+  .arrow {
+    font-size: 35px;
+    margin-left: 8px;
+  }
+
+  .healing-text {
+    font-size: 14px;
+  }
+
+  .image-area {
+    width: 52%;
+    height: 310px;
+    gap: 6px;
+  }
+
+  .image-one,
+  .image-two,
+  .image-three {
+    width: 95px;
+    height: 215px;
+  }
+
+  .satisfaction {
+    left: 98px;
+    width: 95px;
+    height: 65px;
+  }
+
+  .satisfaction strong {
+    font-size: 25px;
+  }
+
+  .recovery-text {
+    font-size: 12px;
+  }
+  .support-section {
+    min-height: 100px;
+    height: auto;
+    padding: 40px 25px;
+    display: block;
+  }
+
+  .content {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .content h1 {
+    font-size: 38px;
+    line-height: 0.95;
+    margin-bottom: 20px;
+  }
+
+  .arrow {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  .content p {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .cards {
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .card-image,
+  .blue-card,
+  .percent-card {
+    height: 130px;
+  }
+
+  .empty {
+    display: none;
+  }
+
+  .percent-card .number {
+    font-size: 40px;
+  }
+
+  .percent-card span {
+    font-size: 12px;
+  }
+  .health-section {
+    padding: 45px 25px 30px;
+  }
+
+  .heading {
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+
+  .cards {
+    gap: 9px;
+  }
+
+  .card {
+    min-height: 190px;
+    padding: 16px 13px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+  .thank-section {
+    padding: 20px;
+  }
+
+  .thank-card {
+    min-height: 450px;
+    padding: 25px;
+  }
+
+  .header-info {
+    gap: 20px;
+    font-size: 8px;
+  }
+
+  .content {
+    left: 25px;
+    bottom: 45px;
+  }
+
+  .content h1 {
+    font-size: 55px;
+  }
+
+  .content p {
+    font-size: 11px;
+  }
+
+  .arrow {
+    right: 25px;
+    bottom: 35px;
+  }
+}
+@media (max-width: 468px) {
+  .health-section {
+    min-height: auto;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+  }
+  .health-left {
+    width: 100%;
+  }
+  .health-left h1 {
+    font-size: 34px;
+    line-height: 0.95;
+    margin-bottom: 12px;
+  }
+  .arrow {
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+  .next-btn {
+    padding: 12px 25px;
+    font-size: 10px;
+  }
+  .health-right {
+    width: 100%;
+  }
+  .health-right p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+  .medical-hero {
+    min-height: 100vh;
+  }
+  .top-bar {
+    padding: 24px 22px;
+  }
+  .logo-icon {
+    width: 15px;
+    height: 22px;
+  }
+  .logo-text strong {
+    font-size: 7px;
+  }
+  .logo-text span {
+    font-size: 5px;
+  }
+  .navigation {
+    gap: 15px;
+  }
+  .navigation span {
+    font-size: 6px;
+  }
+  .navigation span:nth-child(1) {
+    display: none;
+  }
+  .hero-content {
+    left: 22px;
+    bottom: 75px;
+    right: 20px;
+  }
+  .hero-content h1 {
+    font-size: 43px;
+    line-height: 0.92;
+    letter-spacing: -2px;
+  }
+  .hero-content p {
+    margin-top: 12px;
+    font-size: 11px;
+  }
+  .arrow {
+    right: 22px;
+    bottom: 35px;
+    transform: scale(0.8);
+    transform-origin: right center;
+  }
+  .professional-section {
+    padding: 45px 20px;
+    min-height: auto;
+  }
+
+  .professional-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+  }
+
+  /* TEXT FULL WIDTH */
+  .professional-content {
+    width: 100%;
+  }
+
+  .professional-content h1 {
+    font-size: 31px;
+    line-height: 0.95;
+    margin-bottom: 18px;
+  }
+
+  .professional-content p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .arrow {
+    font-size: 35px;
+    margin-left: 7px;
+  }
+
+  /* COLLAGE */
+  .image-collage {
+    width: 100%;
+    height: 300px;
+    transform: scale(0.85);
+    transform-origin: left top;
+    margin-bottom: -40px;
+  }
+
+  .card-one {
+    width: 105px;
+    height: 225px;
+    left: 0;
+    top: 40px;
+  }
+
+  .card-one .card-text {
+    font-size: 14px;
+  }
+
+  .accuracy-card {
+    left: 110px;
+    width: 105px;
+    height: 68px;
+  }
+
+  .accuracy-card strong {
+    font-size: 29px;
+  }
+
+  .card-two {
+    width: 105px;
+    height: 215px;
+    left: 108px;
+    top: 75px;
+  }
+
+  .card-three {
+    width: 95px;
+    height: 100px;
+    left: 218px;
+    top: 65px;
+  }
+
+  .card-four {
+    width: 95px;
+    height: 100px;
+    left: 218px;
+    top: 170px;
+  }
+
+  .card-five {
+    width: 105px;
+    height: 240px;
+    left: 318px;
+    top: 45px;
+  }
+  .patient-section {
+    padding: 40px 20px;
+    min-height: auto;
+  }
+
+  .patient-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+  }
+
+  .patient-content {
+    width: 100%;
+  }
+
+  .patient-content h1 {
+    font-size: 32px;
+    line-height: 0.98;
+  }
+
+  .down-arrow {
+    font-size: 42px;
+    margin: 12px 0;
+  }
+
+  .patient-content p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .patient-collage {
+    width: 100%;
+    height: 310px;
+    transform: scale(0.82);
+    transform-origin: left top;
+    margin-bottom: -50px;
+  }
+  .diagnostic-section {
+    padding: 35px 18px;
+  }
+
+  .diagnostic-title {
+    font-size: 30px;
+    line-height: 1.05;
+    margin-bottom: 18px;
+  }
+
+  .diagnostic-cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .diagnostic-card {
+    min-height: 160px;
+    padding: 16px 13px;
+  }
+
+  .arrow-box {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 18px;
+  }
+
+  .diagnostic-card p {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+  .preventive-section {
+    min-height: auto;
+    display: block;
+    padding: 40px 25px;
+  }
+
+  .left-content,
+  .right-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .left-content {
+    margin-bottom: 35px;
+  }
+
+  .left-content h1 {
+    font-size: 36px;
+    line-height: 0.95;
+    margin-bottom: 18px;
+  }
+
+  .arrow {
+    font-size: 38px;
+    margin-bottom: 25px;
+  }
+
+  .next-btn {
+    padding: 11px 25px;
+    font-size: 11px;
+  }
+
+  .right-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  .healing-section {
+    padding: 40px 20px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .healing-container {
+    display: block;
+    width: 100%;
+  }
+
+  .healing-content {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .healing-title {
+    font-size: 34px;
+    line-height: 1;
+    margin-bottom: 18px;
+  }
+
+  .arrow {
+    font-size: 34px;
+    margin-left: 5px;
+  }
+
+  .healing-text {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .image-area {
+    width: 100%;
+    height: 280px;
+    gap: 6px;
+    overflow: visible;
+    justify-content: center;
+  }
+
+  .image-one,
+  .image-two,
+  .image-three {
+    width: 95px;
+    height: 220px;
+  }
+
+  .satisfaction {
+    top: -35px;
+    left: 98px;
+    width: 95px;
+    height: 65px;
+  }
+
+  .satisfaction strong {
+    font-size: 25px;
+  }
+
+  .satisfaction span {
+    font-size: 11px;
+  }
+
+  .recovery-text {
+    font-size: 12px;
+    padding: 10px 6px;
+  }
+  .support-section {
+    min-height: auto;
+    padding: 40px 25px;
+    display: block;
+  }
+
+  .content {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .content h1 {
+    font-size: 38px;
+    line-height: 0.95;
+    margin-bottom: 20px;
+  }
+
+  .arrow {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  .content p {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .cards {
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .card-image,
+  .blue-card,
+  .percent-card {
+    height: 130px;
+  }
+
+  .empty {
+    display: none;
+  }
+
+  .percent-card .number {
+    font-size: 40px;
+  }
+
+  .percent-card span {
+    font-size: 12px;
+  }
+  .health-section {
+    padding: 35px 18px 25px;
+  }
+
+  .heading {
+    font-size: 32px;
+    line-height: 1.05;
+    margin-bottom: 16px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card {
+    width: 100%;
+    min-height: 175px;
+    padding: 17px 15px;
+  }
+
+  .card p {
+    font-size: 15px;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+
+  .arrow {
+    margin-bottom: 18px;
+  }
+  .thank-section {
+    padding: 10px;
+  }
+
+  .thank-card {
+    min-height: 300px;
+    padding: 18px;
+  }
+
+  .logo {
+    font-size: 6px;
+  }
+
+  .logo-icon {
+    width: 13px;
+    height: 18px;
+  }
+
+  .header-info {
+    gap: 10px;
+    font-size: 6px;
+  }
+
+  .content {
+    left: 18px;
+    bottom: 35px;
+  }
+
+  .content h1 {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .content p {
+    margin-top: 12px;
+    font-size: 9px;
+  }
+
+  .arrow {
+    right: 18px;
+    bottom: 28px;
+
+    transform: scale(0.75);
+    transform-origin: right center;
+  }
+}
